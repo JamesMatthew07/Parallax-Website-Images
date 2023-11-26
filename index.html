@@ -1,81 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Howl's Moving Castle</title>
-	</head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Howl's Moving Castle</title>
+</head>
+
 <body>
     <section class="images">
-        <img src="night.jpg" class="pic" id="night" alt="night">
-        <img src="5.png" class="pic5" id="5" alt="image 5">
-        <img src="castle3.png" class="castle" id="castle" alt="castle">
+        <img src="bg.jpg" class="pic" id="bg" alt="bg">
+        <img src="castle.png" class="castle" id="castle" alt="castle">
         <img src="lower.png" class="lower" id="lower" alt="lower">
-        <div class="text" id="txt"><h2>Howl's Moving Castle</h2></div>
-    </section>
-    <section class="content">
-        <div class="why">Why Howl's Moving Castle is the best Studio Ghibli Film</div>
-        <div class ="desc1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ipsum, aliquid neque excepturi tenetur, doloremque beatae at quas voluptate molestias 
-            harum fuga odio accusantium aut atque provident autem repellendus ut repellat quidem. Sed dolores animi veniam, inventore amet suscipit culpa alias nemo ipsum recusandae 
-            facilis a ratione rem. Amet fugiat quis, molestiae nam, consectetur unde officia molestias culpa maiores recusandae explicabo deleniti. Magnam impedit delectus totam 
-            nobis adipisci reprehenderit iusto, eveniet ex odio asperiores. Officiis commodi nulla necessitatibus cumque eaque doloribus delectus id atque, repudiandae perferendis 
-            nisi magni, mollitia quod. Eligendi assumenda architecto ab neque similique nesciunt minima earum itaque, iure dignissimos vitae porro delectus mollitia, impedit sint
-             quibusdam dolor voluptatum at atque est amet suscipit, quis dolorem? Temporibus itaque ipsum placeat similique ipsa sunt aliquid possimus. Excepturi, nisi earum.
+        <img src="upper.png" class="upper" id="upper" alt="upper">
+        <!-- <img src="orig.jpg" class="orig" id="orig" alt="orig"> -->
+        <div class="text" id="txt">
+            <h2>Howl's Moving Castle</h2>
         </div>
     </section>
+    <section class="cnt2">
+            <div data-aos="fade-up" class="kmoments">
+                <h3>Some Key Moments</h3>
+            </div>
+        <div class="vid">
+            <div data-aos="slide-up" data-aos-duration="1000"><video width="400px" height="400px" controls>
+                    <source src="vid1.mp4" type="video/mp4">
+                </video></div>
+            <div data-aos="slide-up" data-aos-duration="1000" data-aos-delay="150"><video width="400px" height="400px" controls>
+                    <source src="vid2.mp4" type="video/mp4">
+                </video></div>
+            <div data-aos="slide-up" data-aos-duration="1000" data-aos-delay="250"><video width="400px" height="400px" controls>
+                    <source src="vid3.mp4" type="video/mp4">
+                </video></div>
+            </div>
+    </section>
+    <section class="cnt3">
+        <div class="mcharacters">
+            <h2 class="Mtxt" data-aos="slide-down" data-aos-duration="10000">Main Characters</h2></div>
+            <div class="wrap">
+            <div data-aos="zoom-in"data-aos-duration="1000" class="c-image front">
+            <img src="howl4.webp" id="howl" alt="howl">
+            <div class="content"><h1>Howl</h1>
+            </div>
+        </div>
+            <div data-aos="zoom-in" data-aos-duration="400" data-aos-delay="150" class="c-image front2">
+            <img src="sophie4.gif" id="howl" alt="howl">
+            <div class="content"><h1>Sophie</h1>
+            </div>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200" class="c-image front3">
+            <img src="calcifer.gif" id="howl" alt="howl">
+            <div class="content"><h1>Calcifer</h1>
+            </div>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="250" class="c-image front4">
+            <img src="tunip.gif" id="howl" alt="howl">
+            <div class="content"><h1>Tunip</h1>
+            </div>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" class="c-image front5">
+            <img src="witch.gif" id="howl" alt="howl">
+            <div class="content"><h1>Witch of the Waste</h1>
+            </div>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="350" class="c-image front6">
+            <img src="markl.gif" id="howl" alt="howl">
+            <div class="content"><h1>Markl</h1>
+            </div>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="370" class="c-image front7">
+            <img src="heen2.gif" id="howl" alt="howl">
+            <div class="content"><h1>Heen</h1>
+            </div>
+        </div>
+    </div>
+</section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 <style>
-    *
-    {
-        padding:0%;
-        margin:0%
+    @font-face {
+        font-family: ghibli;
+        src: url(ghibli.otf);
     }
-    body
-    {
-        background-color: beige;
-        min-height: 1920px;
+    * {
+        padding: 0%;
+        margin: 0%
     }
-    .text
-    {
-        position:absolute;
+    ::-webkit-scrollbar {
+    display: none;
+}
+
+    body {
+       min-height: 1920px;
+       background-color: antiquewhite;
+    }
+
+    .text {
+        position: absolute;
         /* z-index: 10000; */
         font-size: 50px;
         margin-bottom: 600px;
+        font-family: ghibli;
     }
-    .images
-    {
-        background-color: beige;
-    position:relative;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    .images {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    /* images::before
-    {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top, beige, transparent);
-    z-index: 10000;
-    }
-    images::after
-    {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background:beige;
-    z-index: 10000;
-    mix-blend-mode: color;
-    } */
-    .images img
-    {
+
+    .images img {
         position: absolute;
         top: 0;
         left: 0;
@@ -84,33 +126,125 @@
         object-fit: cover;
         pointer-events: none;
     }
-    .why
-    {
-        font-size:50px ;
-        text-align: center;
+
+    .kmoments {
+        display: flex;
+        font-family: ghibli;
+        font-size: 40px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
     }
 
+    .vid {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .mcharacters {
+        display: flex;
+        margin-top: 100px;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+    }
+    .Mtxt
+    {
+        font-family: ghibli;
+        padding-bottom: 100px;
+    }
+
+    .c-image {
+        height: 300px;
+        width: 250px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        margin-left: 200px;
+        float: left;
+        overflow: hidden;
+        border-radius: 10%;
+        border-right:2px solid black;
+        line-height:4em;
+        box-shadow: 10px 0px rgb(0, 0, 0);
+    }
+
+    .front7 {
+        position: relative;
+        left: 475px;
+    }
+    .cnt2
+    {
+        min-height: auto;
+        margin-top: 50px;
+        padding-bottom: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .cnt3
+    {
+        border: 2px solid black;
+        min-height: 1920px;
+        background-image: url('bg2.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    .content
+    {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.6s;
+    }
+    .content:hover{
+        opacity: 1;
+    }
+    .content h1{
+        font-size: 42px;
+        color: #00ff84;
+        margin-bottom: 10px;
+        font-family: ghibli;
+    }
+    .content > *{
+        transform: translateY(25px);
+        transition: transform 0.6s;
+    }
+    .content:hover > * {
+        transform: translateY(0px);
+    }
 </style>
 <script>
-    // let image1 = document.getElementById("1");
-    // let image2 = document.getElementById("2");
-    // let image3 = document.getElementById("3");
-    let image4 = document.getElementById("4");
-    let image5 = document.getElementById("5");
-    let image7 = document.getElementById("7");
+
+    let castle = document.getElementById("castle");
+    let lower = document.getElementById("lower");
+    let upper = document.getElementById("upper");
+    let bg = document.getElementById("bg");
+    let orig = document.getElementById("orig");
 
     window.addEventListener('scroll', () => {
         let value = window.scrollY;
 
-        txt.style.marginTop = value * 2.5  + 'px';
-        // image1.style.top = value * 2.5  + 'px';
-        // image2.style.marginTop = value * 1.5  + 'px';
-        // image3.style.bottom = value * 2.5  + 'px';
-        // image4.style.marginTop = value * 2.5  + 'px';
-        image5.style.marginTop = value * -2.5  + 'px';
-        image7.style.marginTop= value * -2.5  + 'px';
-
+        txt.style.marginTop = value * 2.5 + 'px';
+        castle.style.left = value * -5 + 'px';
+        castle.style.top = value * -2 + 'px';
+        lower.style.marginTop = value * 5.5 + 'px';
+        upper.style.marginTop = value * -5.5 + 'px';
     });
 
 </script>
+
 </html>
